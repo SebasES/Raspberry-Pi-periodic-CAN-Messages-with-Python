@@ -39,7 +39,7 @@ MSG_1 =        CAN(can.Message(arbitration_id=0x12, dlc=8, data=[0, 0, 0, 0, 0, 
 MSG_2 = CAN(can.Message(arbitration_id=0x30, dlc=8, data=[0, 0, 0, 0, 0, 0, 0, 0], extended_id=False),15)
 MSG_3 =    CAN(can.Message(arbitration_id=0x38, dlc=8, data=[0, 0, 0, 0, 0, 0, 0, 0], extended_id=False),15)
 
-# BECM Wake Up
+# Start periodic Msg sending
 MSG_1.start()
 MSG_2.start()
 MSG_3.start()
